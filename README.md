@@ -81,6 +81,23 @@ bash
 
 ---
 
+## ⚠ Challenges
+
+- Real-time processing with low latency
+- Face variations (angle, lighting)
+- False positives in single-frame detection
+- Security risks (photo spoofing)
+
+---
+
+## 💡 Solutions
+
+- Multi-frame verification (3-frame threshold)
+- Distance threshold tuning (0.4)
+- Fallback authentication system
+
+---
+
 📊 Performance
 - High accuracy with DeepFace embeddings
 - Reduced false positives using threshold control
