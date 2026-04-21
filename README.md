@@ -1,13 +1,5 @@
 # 🔐 Real-Time Face Identification Login System
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Computer%20Vision-Face%20Recognition-blue?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Security-Biometric%20Auth-green?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Framework-OpenCV%20%7C%20DeepFace-purple?style=for-the-badge"/>
-</p>
-
----
-
 ## 📌 Problem Statement  
 
 Traditional password-based authentication systems:
@@ -73,7 +65,7 @@ bash
 
 ---
 
-🔒 Security Features
+## 🔒 Security Features
 - Distance threshold tuning
 - Multi-attempt verification
 - Spoof resistance via repeated validation
@@ -98,14 +90,14 @@ bash
 
 ---
 
-📊 Performance
+## 📊 Performance
 - High accuracy with DeepFace embeddings
 - Reduced false positives using threshold control
 - Stable real-time detection
 
 ---
 
-🚀 Future Improvements
+## 🚀 Future Improvements
 - Liveness detection (anti-spoofing)
 - Face embedding database
 - Cloud authentication
@@ -113,7 +105,7 @@ bash
 
 ---
 
-🎯 Use Cases
+## 🎯 Use Cases
 - Secure login systems
 - Attendance systems
 - Smart surveillance
