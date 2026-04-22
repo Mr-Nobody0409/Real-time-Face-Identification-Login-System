@@ -31,18 +31,7 @@ This project implements a **real-time biometric authentication system** using **
 ---
 
 ## 🏗️ System Architecture  
-Camera Input
-->
-Face Detection (OpenCV Haar Cascade)
-->
-Face Extraction
-->
-DeepFace Verification
-->
-Multi-frame Validation
-->
-Login Success / Fallback Authentication
-
+Camera → Face Detection → Liveness Check → Face Verification → Template Match → API Response
 ---
 
 ## 🛠️ Tech Stack  
