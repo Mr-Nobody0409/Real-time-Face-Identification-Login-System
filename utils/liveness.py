@@ -1,13 +1,18 @@
 import cv2
 
-def detect_motion(prev_frame, curr_frame, threshold=5000):
+prev_frame = None
+
+def is_live(frame):
+    global prev_frame
+
     if prev_frame is None:
+        prev_frame = frame
         return True
 
-    diff = cv2.absdiff(prev_frame, curr_frame)
+    diff = cv2.absdiff(prev_frame, frame)
     gray = cv2.cvtColor(diff, cv2.COLOR_BGR2GRAY)
-    _, thresh = cv2.threshold(gray, 25, 255, cv2.THRESH_BINARY)
 
-    motion_score = thresh.sum()
+    motion = gray.sum()
+    prev_frame = frame
 
-    return motion_score > threshold
+    return motion > 5000
