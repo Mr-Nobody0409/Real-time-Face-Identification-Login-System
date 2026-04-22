@@ -1,20 +1,20 @@
 from fastapi import FastAPI
 import time
 
-from face_auth.recognizer import verify_against_db
-
 app = FastAPI()
+
+@app.get("/")
+def home():
+    return {"message": "Face Auth API Running"}
 
 @app.post("/login")
 def login():
     start = time.time()
 
-    # (simulate frame input for now)
-    # integrate camera later if needed
+    # simulate verification
+    user = "Lohith"
 
-    user, dist = verify_against_db("sample_frame")
-
-    latency = (time.time() - start) * 1000  # ms
+    latency = (time.time() - start) * 1000
 
     return {
         "user": user,
