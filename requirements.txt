@@ -1,4 +1,6 @@
 opencv-python
 deepface
+fastapi
+uvicorn
 pillow
-tk
+numpy
