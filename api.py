@@ -11,8 +11,8 @@ def home():
 def login():
     start = time.time()
 
-    # simulate verification
-    user = "Lohith"
+    # Dummy response (integrate camera if needed)
+    user = "Demo_User"
 
     latency = (time.time() - start) * 1000
 
