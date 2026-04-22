@@ -12,7 +12,7 @@ def is_live(frame):
     diff = cv2.absdiff(prev_frame, frame)
     gray = cv2.cvtColor(diff, cv2.COLOR_BGR2GRAY)
 
-    motion = gray.sum()
+    motion_score = gray.sum()
     prev_frame = frame
 
-    return motion > 5000
+    return motion_score > 5000
