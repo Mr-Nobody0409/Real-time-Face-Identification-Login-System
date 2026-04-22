@@ -1,46 +1,39 @@
 # 🔐 Real-Time Face Identification Login System
 
-## 📌 Problem Statement  
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Inter&size=26&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Biometric+Authentication+System;Computer+Vision+%2B+AI+%2B+Backend;Real-Time+Face+Verification" />
+</p>
 
-Traditional password-based authentication systems:
-- Vulnerable to theft and brute-force attacks  
-- Poor user experience  
-- Lack real-time identity verification  
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge&logo=python">
+  <img src="https://img.shields.io/badge/OpenCV-Computer%20Vision-green?style=for-the-badge&logo=opencv">
+  <img src="https://img.shields.io/badge/DeepFace-Face%20Recognition-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/FastAPI-Backend-teal?style=for-the-badge&logo=fastapi">
+</p>
 
 ---
 
-## 🚀 Solution  
+## 🚀 Overview
 
-This project implements a **real-time biometric authentication system** using **face recognition with fallback security**:
+A **real-time biometric authentication system** that enables secure login using face recognition.  
+Built using **DeepFace, OpenCV, and FastAPI**, the system simulates a **production-style authentication pipeline**.
 
-- Detects face using OpenCV  
-- Verifies identity using DeepFace  
-- Uses multi-frame validation for accuracy  
-- Falls back to password authentication if verification fails  
+---
+
+## 🧠 System Flow
+
+Camera → Face Detection → Liveness Check → Face Verification → Access Granted / Denied
 
 ---
 
 ## 🧠 Key Features  
 
-- 🎥 Real-time face detection (OpenCV)  
-- 🧠 Face verification (DeepFace)  
-- 🔁 Multi-frame validation (anti-noise mechanism)  
-- 🔐 Fallback login (security layer)  
-- ⚡ Fast recognition with threshold tuning  
-
----
-
-## 🏗️ System Architecture  
-Camera → Face Detection → Liveness Check → Face Verification → Template Match → API Response
----
-
-## 🛠️ Tech Stack  
-
-- Python  
-- OpenCV  
-- DeepFace  
-- Tkinter (GUI)  
-- PIL  
+- Real-Time Processing
+- Live webcam-based face detection
+- Continuous frame analysis
+- Intelligent Verification
+- Multi-frame validation for higher accuracy
+- Threshold tuning to reduce false positives
 
 ---
 
@@ -54,48 +47,68 @@ bash
 
 ---
 
-## 🔒 Security Features
-- Distance threshold tuning
-- Multi-attempt verification
-- Spoof resistance via repeated validation
-- Password fallback mechanism
+## 🔐 Security Layer
+- Motion-based liveness detection (anti-spoofing)
+- Prevents static image attacks
 
 ---
 
-## ⚠ Challenges
-
-- Real-time processing with low latency
-- Face variations (angle, lighting)
-- False positives in single-frame detection
-- Security risks (photo spoofing)
+## ⚙️ System Design
+- Modular architecture (clean separation of logic)
+- Multi-user authentication support
+- Scalable backend-ready structure
 
 ---
 
-## 💡 Solutions
-
-- Multi-frame verification (3-frame threshold)
-- Distance threshold tuning (0.4)
-- Fallback authentication system
+## 🌐 Backend Integration
+- FastAPI endpoints for authentication
+- Latency tracking for performance insights
 
 ---
 
-## 📊 Performance
-- High accuracy with DeepFace embeddings
-- Reduced false positives using threshold control
-- Stable real-time detection
+## 📊 Evaluation
+- Tested on subset of LFW dataset
+- Real-world conditions: lighting, pose, expressions
 
 ---
 
-## 🚀 Future Improvements
-- Liveness detection (anti-spoofing)
-- Face embedding database
-- Cloud authentication
-- Mobile/web integration
+## 📊 Dataset
+
+Uses a subset of Labeled Faces in the Wild (LFW):
+
+- 👤 5 identities
+- 🖼 1 training image per user
+- 🔍 5–10 test images per user
 
 ---
 
-## 🎯 Use Cases
-- Secure login systems
-- Attendance systems
-- Smart surveillance
-- Access control systems
+## ▶️ Run Application
+- GUI Mode -- python app.py
+- API Mode -- uvicorn api:app --reload
+- Evaluation -- python evaluation.py
+
+---
+
+## 🧠 What I Learned
+- Designing real-time computer vision pipelines
+- Handling noisy predictions using multi-frame logic
+- Structuring scalable Python applications
+- Integrating AI models with backend systems
+- Evaluating models using real-world datasets
+
+---
+
+## 🚧 Future Improvements
+- Advanced liveness detection (eye-blink / depth-based)
+- Face embedding caching for faster inference
+- Database integration (MongoDB / SQL)
+- Cloud deployment (AWS / Azure)
+- Multi-camera support
+
+---
+
+## 👤 Author
+
+Lohith Reddy Bodumallu
+
+<p align="center"> <a href="mailto:lohithreddyb@gmail.com"> <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"> </a> <a href="https://linkedin.com/in/lohith-reddy-mrnobody"> <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"> </a> <a href="https://github.com/Mr-Nobody0409"> <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"> </a> </p>
